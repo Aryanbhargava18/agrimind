@@ -1,9 +1,12 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+
 fastapi
 uvicorn
 langgraph
 groq
 chromadb
-sentence-transformers
+sentence-transformers==2.2.2
+torch==2.2.2+cpu
 pandas
 numpy
 scikit-learn
