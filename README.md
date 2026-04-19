@@ -33,6 +33,22 @@ This project addresses real-world agricultural challenges by bridging the gap be
 └── runtime.txt            # Environment configuration for deployment
 ```
 
+## 🤝 Contribution Matrix
+
+| Task Area | Agrim | Sanath | Daniel | Aryan |
+| :--- | :---: | :---: | :---: | :---: |
+| **Agentic Workflow** | ✔️ | | | |
+| **Deployment & Hosting** | | ✔️ | | |
+| **Report, Docs & Feature Eng.** | | | ✔️ | |
+| **Frontend Development** | | | | ✔️ |
+
+### Role Descriptions
+*   **Agrim:** Led the development of the Agentic AI logic, state-management, and LangGraph workflow transitions.
+*   **Sanath:** Managed the end-to-end deployment pipeline on Render and environment configuration.
+*   **Daniel:** Authored the research report, documentation, and handled agricultural feature engineering.
+*   **Aryan:** Designed and developed the Streamlit user interface and frontend data visualizations.
+
+
 ## 🚀 Setup & Installation
 
 1. Clone the Repository
