@@ -1,0 +1,8 @@
+groq>=0.9
+langgraph>=0.2
+chromadb>=0.5
+sentence-transformers>=3.0
+scikit-learn>=1.4
+pandas>=2.0
+numpy>=1.26
+

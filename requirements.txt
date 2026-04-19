@@ -1,18 +1,28 @@
-# Extra index for CPU-only torch to save space on Render
+# Optional Python dependencies for the reference Agent/RAG implementation.
+# The React frontend uses package.json.
+-r requirements-agent.txt
+>>>>>>> 1a3626f (WebApp of working model)
+=======
+# Backend (Render): FastAPI + ChromaDB RAG + LangGraph
 --extra-index-url https://download.pytorch.org/whl/cpu
-
-
 fastapi
-uvicorn
+uvicorn[standard]
 langgraph
 groq
 chromadb
 sentence-transformers>=3.0.0
 torch>=2.5.0
-
 pandas
 numpy
 scikit-learn
 plotly
 joblib
 python-dotenv
+
+# Frontend reference agent (local)
+-r requirements-agent.txt
+=======
+# Optional Python dependencies for the reference Agent/RAG implementation.
+# The React frontend uses package.json.
+-r requirements-agent.txt
+>>>>>>> 1a3626f (WebApp of working model)

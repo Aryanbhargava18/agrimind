@@ -1,0 +1,38 @@
+{
+  "crop_summary": {
+    "crop_name": "Wheat",
+    "region": "North",
+    "yield_prediction": "5.49 tons/hectare",
+    "yield_category": "Medium"
+  },
+  "field_status": {
+    "soil_type": "Sandy",
+    "rainfall_mm": 450.0,
+    "temperature": "27.0 C",
+    "irrigation": true,
+    "fertilizer": true,
+    "weather": "Sunny"
+  },
+  "yield_risk_level": "Medium",
+  "recommended_actions": [
+    {
+      "task": "Soil Testing and Amendment",
+      "description": "Conduct a soil test to determine nutrient levels and pH, then amend the soil based on results."
+    },
+    {
+      "task": "Precision Fertilization",
+      "description": "Optimize fertilizer application according to wheat nutrient requirements and soil conditions."
+    },
+    {
+      "task": "Irrigation Scheduling",
+      "description": "Use soil moisture and weather forecasts to prevent crop stress and avoid waterlogging."
+    }
+  ],
+  "agronomic_references": [
+    "Wheat performs well under moderate rainfall and balanced soil moisture.",
+    "Sandy soil loses nutrients quickly and benefits from smaller, frequent inputs.",
+    "Medium yield can improve through precision fertilization and irrigation scheduling."
+  ],
+  "safety_disclaimer": "Consult a qualified agronomist before applying recommendations to a real farm."
+}
+

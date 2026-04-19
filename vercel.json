@@ -1,0 +1,9 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://genai-capstone-1.onrender.com/:path*"
+    }
+  ]
+}
+
