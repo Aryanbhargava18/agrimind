@@ -1,0 +1,710 @@
+[
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Mapping",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TypedDict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TypedDict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "LinearRegression",
+        "importPath": "sklearn.linear_model",
+        "description": "sklearn.linear_model",
+        "isExtraImport": true,
+        "detail": "sklearn.linear_model",
+        "documentation": {}
+    },
+    {
+        "label": "LinearRegression",
+        "importPath": "sklearn.linear_model",
+        "description": "sklearn.linear_model",
+        "isExtraImport": true,
+        "detail": "sklearn.linear_model",
+        "documentation": {}
+    },
+    {
+        "label": "DecisionTreeRegressor",
+        "importPath": "sklearn.tree",
+        "description": "sklearn.tree",
+        "isExtraImport": true,
+        "detail": "sklearn.tree",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "Groq",
+        "importPath": "groq",
+        "description": "groq",
+        "isExtraImport": true,
+        "detail": "groq",
+        "documentation": {}
+    },
+    {
+        "label": "chromadb",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "chromadb",
+        "description": "chromadb",
+        "detail": "chromadb",
+        "documentation": {}
+    },
+    {
+        "label": "embedding_functions",
+        "importPath": "chromadb.utils",
+        "description": "chromadb.utils",
+        "isExtraImport": true,
+        "detail": "chromadb.utils",
+        "documentation": {}
+    },
+    {
+        "label": "StateGraph",
+        "importPath": "langgraph.graph",
+        "description": "langgraph.graph",
+        "isExtraImport": true,
+        "detail": "langgraph.graph",
+        "documentation": {}
+    },
+    {
+        "label": "END",
+        "importPath": "langgraph.graph",
+        "description": "langgraph.graph",
+        "isExtraImport": true,
+        "detail": "langgraph.graph",
+        "documentation": {}
+    },
+    {
+        "label": "START",
+        "importPath": "langgraph.graph",
+        "description": "langgraph.graph",
+        "isExtraImport": true,
+        "detail": "langgraph.graph",
+        "documentation": {}
+    },
+    {
+        "label": "joblib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "joblib",
+        "description": "joblib",
+        "detail": "joblib",
+        "documentation": {}
+    },
+    {
+        "label": "asynccontextmanager",
+        "importPath": "contextlib",
+        "description": "contextlib",
+        "isExtraImport": true,
+        "detail": "contextlib",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "run_farm_advisory",
+        "importPath": "genai_capstone",
+        "description": "genai_capstone",
+        "isExtraImport": true,
+        "detail": "genai_capstone",
+        "documentation": {}
+    },
+    {
+        "label": "setup_model",
+        "importPath": "genai_capstone",
+        "description": "genai_capstone",
+        "isExtraImport": true,
+        "detail": "genai_capstone",
+        "documentation": {}
+    },
+    {
+        "label": "setup_knowledge_base",
+        "importPath": "genai_capstone",
+        "description": "genai_capstone",
+        "isExtraImport": true,
+        "detail": "genai_capstone",
+        "documentation": {}
+    },
+    {
+        "label": "setup_model",
+        "importPath": "genai_capstone",
+        "description": "genai_capstone",
+        "isExtraImport": true,
+        "detail": "genai_capstone",
+        "documentation": {}
+    },
+    {
+        "label": "setup_knowledge_base",
+        "importPath": "genai_capstone",
+        "description": "genai_capstone",
+        "isExtraImport": true,
+        "detail": "genai_capstone",
+        "documentation": {}
+    },
+    {
+        "label": "AgentRuntime",
+        "kind": 6,
+        "importPath": "src.reference_agent.graph",
+        "description": "src.reference_agent.graph",
+        "peekOfCode": "class AgentRuntime:\n    model: Any\n    scaler: Any\n    feature_cols: list[str]\n    collection: Any\n    groq_client: Any\ndef build_runtime(dataset_path: str = DATASET_PATH) -> AgentRuntime:\n    \"\"\"Create every runtime dependency required by the reference agent.\"\"\"\n    model, scaler, feature_cols = setup_model(dataset_path)\n    collection = setup_knowledge_base()",
+        "detail": "src.reference_agent.graph",
+        "documentation": {}
+    },
+    {
+        "label": "build_runtime",
+        "kind": 2,
+        "importPath": "src.reference_agent.graph",
+        "description": "src.reference_agent.graph",
+        "peekOfCode": "def build_runtime(dataset_path: str = DATASET_PATH) -> AgentRuntime:\n    \"\"\"Create every runtime dependency required by the reference agent.\"\"\"\n    model, scaler, feature_cols = setup_model(dataset_path)\n    collection = setup_knowledge_base()\n    groq_client = get_groq_client()\n    return AgentRuntime(\n        model=model,\n        scaler=scaler,\n        feature_cols=feature_cols,\n        collection=collection,",
+        "detail": "src.reference_agent.graph",
+        "documentation": {}
+    },
+    {
+        "label": "setup_model",
+        "kind": 2,
+        "importPath": "src.reference_agent.graph",
+        "description": "src.reference_agent.graph",
+        "peekOfCode": "def setup_model(dataset_path: str = DATASET_PATH) -> tuple[Any, Any, list[str]]:\n    \"\"\"Train the Linear Regression model using the Milestone 1 preprocessing.\"\"\"\n    import pandas as pd\n    from sklearn.linear_model import LinearRegression\n    from sklearn.preprocessing import StandardScaler\n    df = pd.read_csv(dataset_path).dropna()\n    df[\"Fertilizer_Used\"] = df[\"Fertilizer_Used\"].astype(int)\n    df[\"Irrigation_Used\"] = df[\"Irrigation_Used\"].astype(int)\n    q1 = df[NUM_COLS].quantile(0.25)\n    q3 = df[NUM_COLS].quantile(0.75)",
+        "detail": "src.reference_agent.graph",
+        "documentation": {}
+    },
+    {
+        "label": "setup_knowledge_base",
+        "kind": 2,
+        "importPath": "src.reference_agent.graph",
+        "description": "src.reference_agent.graph",
+        "peekOfCode": "def setup_knowledge_base(documents: list[str] | None = None) -> Any:\n    \"\"\"Create an in-memory ChromaDB collection for agronomy retrieval.\"\"\"\n    import chromadb\n    from chromadb.utils import embedding_functions\n    embedding_fn = embedding_functions.SentenceTransformerEmbeddingFunction(\n        model_name=\"all-MiniLM-L6-v2\"\n    )\n    client = chromadb.EphemeralClient()\n    collection = client.get_or_create_collection(\n        name=\"agronomy_kb\",",
+        "detail": "src.reference_agent.graph",
+        "documentation": {}
+    },
+    {
+        "label": "get_groq_client",
+        "kind": 2,
+        "importPath": "src.reference_agent.graph",
+        "description": "src.reference_agent.graph",
+        "peekOfCode": "def get_groq_client() -> Any:\n    \"\"\"Create the Groq client expected by the LLM nodes.\"\"\"\n    from groq import Groq\n    api_key = os.getenv(\"GROQ_API_KEY\")\n    if not api_key:\n        raise EnvironmentError(\"GROQ_API_KEY is not set.\")\n    return Groq(api_key=api_key)\ndef build_graph(runtime: AgentRuntime) -> Any:\n    \"\"\"Compile the LangGraph workflow for the advisory agent.\"\"\"\n    from langgraph.graph import END, START, StateGraph",
+        "detail": "src.reference_agent.graph",
+        "documentation": {}
+    },
+    {
+        "label": "build_graph",
+        "kind": 2,
+        "importPath": "src.reference_agent.graph",
+        "description": "src.reference_agent.graph",
+        "peekOfCode": "def build_graph(runtime: AgentRuntime) -> Any:\n    \"\"\"Compile the LangGraph workflow for the advisory agent.\"\"\"\n    from langgraph.graph import END, START, StateGraph\n    graph = StateGraph(FarmState)\n    graph.add_node(\"predict\", lambda state: node_predict(state, runtime))\n    graph.add_node(\"retrieve\", lambda state: node_retrieve(state, runtime))\n    graph.add_node(\"reason\", lambda state: node_reason(state, runtime))\n    graph.add_node(\"report\", lambda state: node_report(state, runtime))\n    graph.add_edge(START, \"predict\")\n    graph.add_edge(\"predict\", \"retrieve\")",
+        "detail": "src.reference_agent.graph",
+        "documentation": {}
+    },
+    {
+        "label": "node_predict",
+        "kind": 2,
+        "importPath": "src.reference_agent.graph",
+        "description": "src.reference_agent.graph",
+        "peekOfCode": "def node_predict(state: FarmState, runtime: AgentRuntime) -> dict[str, Any]:\n    \"\"\"Preprocess farm input and run the trained yield model.\"\"\"\n    import pandas as pd\n    try:\n        data = state[\"farm_data\"].copy()\n        data[\"Fertilizer_Used\"] = int(data[\"Fertilizer_Used\"])\n        data[\"Irrigation_Used\"] = int(data[\"Irrigation_Used\"])\n        row = pd.DataFrame([data])\n        row = pd.get_dummies(row, columns=CAT_COLS, drop_first=True)\n        row = row.reindex(columns=runtime.feature_cols, fill_value=0)",
+        "detail": "src.reference_agent.graph",
+        "documentation": {}
+    },
+    {
+        "label": "node_retrieve",
+        "kind": 2,
+        "importPath": "src.reference_agent.graph",
+        "description": "src.reference_agent.graph",
+        "peekOfCode": "def node_retrieve(state: FarmState, runtime: AgentRuntime) -> dict[str, Any]:\n    \"\"\"Retrieve the most relevant agronomy chunks for the field state.\"\"\"\n    if state.get(\"error\"):\n        return {\"retrieved_docs\": []}\n    farm = state[\"farm_data\"]\n    query = (\n        f\"{farm['Crop']} {farm['Soil_Type']} {farm['Weather_Condition']} \"\n        f\"{state['yield_category']} yield\"\n    )\n    results = runtime.collection.query(query_texts=[query], n_results=4)",
+        "detail": "src.reference_agent.graph",
+        "documentation": {}
+    },
+    {
+        "label": "node_reason",
+        "kind": 2,
+        "importPath": "src.reference_agent.graph",
+        "description": "src.reference_agent.graph",
+        "peekOfCode": "def node_reason(state: FarmState, runtime: AgentRuntime) -> dict[str, Any]:\n    \"\"\"Call Groq to reason over prediction plus retrieved agronomy context.\"\"\"\n    if state.get(\"error\"):\n        return {\"llm_reasoning\": \"\"}\n    try:\n        reasoning = call_llm(runtime, build_reasoning_prompt(state))\n        return {\"llm_reasoning\": reasoning}\n    except Exception as exc:\n        return {\"error\": str(exc), \"llm_reasoning\": \"\"}\ndef node_report(state: FarmState, runtime: AgentRuntime) -> dict[str, Any]:",
+        "detail": "src.reference_agent.graph",
+        "documentation": {}
+    },
+    {
+        "label": "node_report",
+        "kind": 2,
+        "importPath": "src.reference_agent.graph",
+        "description": "src.reference_agent.graph",
+        "peekOfCode": "def node_report(state: FarmState, runtime: AgentRuntime) -> dict[str, Any]:\n    \"\"\"Convert raw reasoning into a stable structured advisory report.\"\"\"\n    if state.get(\"error\") and not state.get(\"llm_reasoning\"):\n        return {\"advisory_report\": normalize_report({}, state)}\n    try:\n        raw_json = call_llm(\n            runtime,\n            build_report_prompt(state[\"llm_reasoning\"]),\n            json_mode=True,\n        )",
+        "detail": "src.reference_agent.graph",
+        "documentation": {}
+    },
+    {
+        "label": "call_llm",
+        "kind": 2,
+        "importPath": "src.reference_agent.graph",
+        "description": "src.reference_agent.graph",
+        "peekOfCode": "def call_llm(runtime: AgentRuntime, prompt: str, *, json_mode: bool = False) -> str:\n    kwargs: dict[str, Any] = {\n        \"model\": MODEL_NAME,\n        \"messages\": [{\"role\": \"user\", \"content\": prompt}],\n        \"temperature\": 0.3,\n    }\n    if json_mode:\n        kwargs[\"response_format\"] = {\"type\": \"json_object\"}\n    response = runtime.groq_client.chat.completions.create(**kwargs)\n    return response.choices[0].message.content",
+        "detail": "src.reference_agent.graph",
+        "documentation": {}
+    },
+    {
+        "label": "normalize_report",
+        "kind": 2,
+        "importPath": "src.reference_agent.graph",
+        "description": "src.reference_agent.graph",
+        "peekOfCode": "def normalize_report(raw: Mapping[str, Any], state: FarmState) -> dict[str, Any]:\n    \"\"\"Guarantee the final report keeps the public response schema.\"\"\"\n    farm = state[\"farm_data\"]\n    def action_list(actions: Any) -> list[dict[str, str]]:\n        if not isinstance(actions, list):\n            return []\n        result: list[dict[str, str]] = []\n        for action in actions:\n            if isinstance(action, Mapping):\n                result.append(",
+        "detail": "src.reference_agent.graph",
+        "documentation": {}
+    },
+    {
+        "label": "run_farm_advisory",
+        "kind": 2,
+        "importPath": "src.reference_agent.graph",
+        "description": "src.reference_agent.graph",
+        "peekOfCode": "def run_farm_advisory(\n    farm_input: dict[str, Any],\n    *,\n    runtime: AgentRuntime | None = None,\n    dataset_path: str = DATASET_PATH,\n) -> dict[str, Any]:\n    \"\"\"Convenience runner for local reference execution.\"\"\"\n    active_runtime = runtime or build_runtime(dataset_path)\n    graph = build_graph(active_runtime)\n    result = graph.invoke(make_initial_state(farm_input))",
+        "detail": "src.reference_agent.graph",
+        "documentation": {}
+    },
+    {
+        "label": "AGRONOMY_DOCS",
+        "kind": 5,
+        "importPath": "src.reference_agent.knowledge_base",
+        "description": "src.reference_agent.knowledge_base",
+        "peekOfCode": "AGRONOMY_DOCS = [\n    \"Rice requires consistent irrigation and flooded fields for high yield. It grows best in clay soil that retains water.\",\n    \"Wheat grows best in loam soil with moderate rainfall between 400-600mm. Avoid waterlogging at root level.\",\n    \"Cotton is highly sensitive to waterlogging. Sandy soil with drip irrigation is ideal for cotton cultivation.\",\n    \"Maize yields improve significantly with nitrogen-rich fertilizers and regular irrigation in warm climates.\",\n    \"Barley is drought-tolerant but sensitive to extreme heat during flowering. Reduce irrigation during grain fill.\",\n    \"Soybeans fix atmospheric nitrogen naturally. Phosphorus supplementation is recommended in silty soils.\",\n    \"Sandy soil drains quickly and loses nutrients fast. Frequent low-volume irrigation and organic matter addition recommended.\",\n    \"Clay soil retains moisture well but risks root rot if over-irrigated. Allow surface drying between watering cycles.\",\n    \"Loam soil is the most balanced soil type. It supports almost all crops with standard irrigation practices.\",",
+        "detail": "src.reference_agent.knowledge_base",
+        "documentation": {}
+    },
+    {
+        "label": "build_reasoning_prompt",
+        "kind": 2,
+        "importPath": "src.reference_agent.prompts",
+        "description": "src.reference_agent.prompts",
+        "peekOfCode": "def build_reasoning_prompt(state: FarmState) -> str:\n    farm_data = json.dumps(state[\"farm_data\"], indent=2)\n    context = \"\\n\".join(f\"- {doc}\" for doc in state[\"retrieved_docs\"])\n    return f\"\"\"You are a senior agronomist advising a farmer.\nFARM DATA:\n{farm_data}\nYIELD PREDICTION: {state['yield_prediction']:.2f} tons/hectare\nYIELD CATEGORY: {state['yield_category']}\nAGRONOMIC CONTEXT from the knowledge base:\n{context}",
+        "detail": "src.reference_agent.prompts",
+        "documentation": {}
+    },
+    {
+        "label": "build_report_prompt",
+        "kind": 2,
+        "importPath": "src.reference_agent.prompts",
+        "description": "src.reference_agent.prompts",
+        "peekOfCode": "def build_report_prompt(reasoning: str) -> str:\n    return f\"\"\"Convert the agronomic reasoning below into a structured JSON report.\nREASONING:\n{reasoning}\nReturn only valid JSON with exactly these keys:\n- recommended_actions: list of objects, each with \"task\" and \"description\"\n- agronomic_references: list of strings citing the agronomic principles used\n- safety_disclaimer: one sentence about consulting professionals\nNo markdown and no explanation.\"\"\"",
+        "detail": "src.reference_agent.prompts",
+        "documentation": {}
+    },
+    {
+        "label": "FarmState",
+        "kind": 6,
+        "importPath": "src.reference_agent.schemas",
+        "description": "src.reference_agent.schemas",
+        "peekOfCode": "class FarmState(TypedDict):\n    farm_data: dict[str, Any]\n    yield_prediction: float\n    yield_category: str\n    retrieved_docs: List[str]\n    llm_reasoning: str\n    advisory_report: dict[str, Any]\n    error: str\ndef make_initial_state(farm_data: dict[str, Any]) -> FarmState:\n    return {",
+        "detail": "src.reference_agent.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "make_initial_state",
+        "kind": 2,
+        "importPath": "src.reference_agent.schemas",
+        "description": "src.reference_agent.schemas",
+        "peekOfCode": "def make_initial_state(farm_data: dict[str, Any]) -> FarmState:\n    return {\n        \"farm_data\": farm_data,\n        \"yield_prediction\": 0.0,\n        \"yield_category\": \"\",\n        \"retrieved_docs\": [],\n        \"llm_reasoning\": \"\",\n        \"advisory_report\": {},\n        \"error\": \"\",\n    }",
+        "detail": "src.reference_agent.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "MODEL_NAME",
+        "kind": 5,
+        "importPath": "src.reference_agent.schemas",
+        "description": "src.reference_agent.schemas",
+        "peekOfCode": "MODEL_NAME = \"llama-3.1-8b-instant\"\nDATASET_PATH = \"crop_yield.csv\"\nNUM_COLS = [\"Rainfall_mm\", \"Temperature_Celsius\", \"Days_to_Harvest\"]\nCAT_COLS = [\"Region\", \"Soil_Type\", \"Crop\", \"Weather_Condition\"]\nYIELD_LOW_THRESHOLD = 3.0\nYIELD_HIGH_THRESHOLD = 6.0\nclass FarmState(TypedDict):\n    farm_data: dict[str, Any]\n    yield_prediction: float\n    yield_category: str",
+        "detail": "src.reference_agent.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "DATASET_PATH",
+        "kind": 5,
+        "importPath": "src.reference_agent.schemas",
+        "description": "src.reference_agent.schemas",
+        "peekOfCode": "DATASET_PATH = \"crop_yield.csv\"\nNUM_COLS = [\"Rainfall_mm\", \"Temperature_Celsius\", \"Days_to_Harvest\"]\nCAT_COLS = [\"Region\", \"Soil_Type\", \"Crop\", \"Weather_Condition\"]\nYIELD_LOW_THRESHOLD = 3.0\nYIELD_HIGH_THRESHOLD = 6.0\nclass FarmState(TypedDict):\n    farm_data: dict[str, Any]\n    yield_prediction: float\n    yield_category: str\n    retrieved_docs: List[str]",
+        "detail": "src.reference_agent.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "NUM_COLS",
+        "kind": 5,
+        "importPath": "src.reference_agent.schemas",
+        "description": "src.reference_agent.schemas",
+        "peekOfCode": "NUM_COLS = [\"Rainfall_mm\", \"Temperature_Celsius\", \"Days_to_Harvest\"]\nCAT_COLS = [\"Region\", \"Soil_Type\", \"Crop\", \"Weather_Condition\"]\nYIELD_LOW_THRESHOLD = 3.0\nYIELD_HIGH_THRESHOLD = 6.0\nclass FarmState(TypedDict):\n    farm_data: dict[str, Any]\n    yield_prediction: float\n    yield_category: str\n    retrieved_docs: List[str]\n    llm_reasoning: str",
+        "detail": "src.reference_agent.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "CAT_COLS",
+        "kind": 5,
+        "importPath": "src.reference_agent.schemas",
+        "description": "src.reference_agent.schemas",
+        "peekOfCode": "CAT_COLS = [\"Region\", \"Soil_Type\", \"Crop\", \"Weather_Condition\"]\nYIELD_LOW_THRESHOLD = 3.0\nYIELD_HIGH_THRESHOLD = 6.0\nclass FarmState(TypedDict):\n    farm_data: dict[str, Any]\n    yield_prediction: float\n    yield_category: str\n    retrieved_docs: List[str]\n    llm_reasoning: str\n    advisory_report: dict[str, Any]",
+        "detail": "src.reference_agent.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "YIELD_LOW_THRESHOLD",
+        "kind": 5,
+        "importPath": "src.reference_agent.schemas",
+        "description": "src.reference_agent.schemas",
+        "peekOfCode": "YIELD_LOW_THRESHOLD = 3.0\nYIELD_HIGH_THRESHOLD = 6.0\nclass FarmState(TypedDict):\n    farm_data: dict[str, Any]\n    yield_prediction: float\n    yield_category: str\n    retrieved_docs: List[str]\n    llm_reasoning: str\n    advisory_report: dict[str, Any]\n    error: str",
+        "detail": "src.reference_agent.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "YIELD_HIGH_THRESHOLD",
+        "kind": 5,
+        "importPath": "src.reference_agent.schemas",
+        "description": "src.reference_agent.schemas",
+        "peekOfCode": "YIELD_HIGH_THRESHOLD = 6.0\nclass FarmState(TypedDict):\n    farm_data: dict[str, Any]\n    yield_prediction: float\n    yield_category: str\n    retrieved_docs: List[str]\n    llm_reasoning: str\n    advisory_report: dict[str, Any]\n    error: str\ndef make_initial_state(farm_data: dict[str, Any]) -> FarmState:",
+        "detail": "src.reference_agent.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "FarmState",
+        "kind": 6,
+        "importPath": "genai_capstone",
+        "description": "genai_capstone",
+        "peekOfCode": "class FarmState(TypedDict):\n    farm_data:        dict\n    yield_prediction: float\n    yield_category:   str\n    retrieved_docs:   List[str]\n    llm_reasoning:    str\n    advisory_report:  dict\n    error:            str\n# ─────────────────────────────────────────────────────────────────────────────\n# GLOBALS (initialised once via setup functions)",
+        "detail": "genai_capstone",
+        "documentation": {}
+    },
+    {
+        "label": "get_groq",
+        "kind": 2,
+        "importPath": "genai_capstone",
+        "description": "genai_capstone",
+        "peekOfCode": "def get_groq() -> Groq:\n    global _groq_client\n    if _groq_client is None:\n        api_key = os.getenv(\"GROQ_API_KEY\")\n        if not api_key:\n            raise EnvironmentError(\"GROQ_API_KEY is not set. Add it to Colab Secrets.\")\n        _groq_client = Groq(api_key=api_key)\n    return _groq_client\n# ─────────────────────────────────────────────────────────────────────────────\n# SETUP: KNOWLEDGE BASE",
+        "detail": "genai_capstone",
+        "documentation": {}
+    },
+    {
+        "label": "setup_knowledge_base",
+        "kind": 2,
+        "importPath": "genai_capstone",
+        "description": "genai_capstone",
+        "peekOfCode": "def setup_knowledge_base() -> None:\n    \"\"\"Initialise ChromaDB with agronomy knowledge. Idempotent — safe to call multiple times.\"\"\"\n    global _collection\n    log.info(\"Setting up knowledge base...\")\n    client = chromadb.EphemeralClient()\n    emb_fn = embedding_functions.SentenceTransformerEmbeddingFunction(\n        model_name=\"all-MiniLM-L6-v2\"\n    )\n    _collection = client.get_or_create_collection(\n        name=\"agronomy_kb\",",
+        "detail": "genai_capstone",
+        "documentation": {}
+    },
+    {
+        "label": "setup_model",
+        "kind": 2,
+        "importPath": "genai_capstone",
+        "description": "genai_capstone",
+        "peekOfCode": "def setup_model() -> None:\n    \"\"\"Load pre-trained model or train on crop_yield.csv if missing.\"\"\"\n    global _model, _scaler, _feature_cols\n    MODEL_FILE = \"model.joblib\"\n    if os.path.exists(MODEL_FILE):\n        log.info(f\"Loading persistent model from '{MODEL_FILE}'...\")\n        data = joblib.load(MODEL_FILE)\n        _model = data['model']\n        _scaler = data['scaler']\n        _feature_cols = data['feature_cols']",
+        "detail": "genai_capstone",
+        "documentation": {}
+    },
+    {
+        "label": "node_predict",
+        "kind": 2,
+        "importPath": "genai_capstone",
+        "description": "genai_capstone",
+        "peekOfCode": "def node_predict(state: FarmState) -> dict:\n    \"\"\"Preprocess farm input and run yield prediction.\"\"\"\n    log.info(\"[Node 1] Running yield prediction...\")\n    try:\n        data = state[\"farm_data\"].copy()\n        data[\"Fertilizer_Used\"] = int(data[\"Fertilizer_Used\"])\n        data[\"Irrigation_Used\"]  = int(data[\"Irrigation_Used\"])\n        row = pd.DataFrame([data])\n        row = pd.get_dummies(row, columns=CAT_COLS, drop_first=True)\n        row = row.reindex(columns=_feature_cols, fill_value=0)",
+        "detail": "genai_capstone",
+        "documentation": {}
+    },
+    {
+        "label": "node_retrieve",
+        "kind": 2,
+        "importPath": "genai_capstone",
+        "description": "genai_capstone",
+        "peekOfCode": "def node_retrieve(state: FarmState) -> dict:\n    \"\"\"Query ChromaDB for the most relevant agronomy context.\"\"\"\n    if state.get(\"error\"):\n        return {\"retrieved_docs\": []}\n    log.info(\"[Node 2] Retrieving agronomy context...\")\n    farm  = state[\"farm_data\"]\n    query = (\n        f\"{farm['Crop']} {farm['Soil_Type']} {farm['Weather_Condition']} \"\n        f\"{state['yield_category']} yield\"\n    )",
+        "detail": "genai_capstone",
+        "documentation": {}
+    },
+    {
+        "label": "node_reason",
+        "kind": 2,
+        "importPath": "genai_capstone",
+        "description": "genai_capstone",
+        "peekOfCode": "def node_reason(state: FarmState) -> dict:\n    \"\"\"LLM agronomic reasoning over prediction + retrieved context.\"\"\"\n    if state.get(\"error\"):\n        return {\"llm_reasoning\": \"\"}\n    log.info(\"[Node 3] Running LLM reasoning...\")\n    try:\n        prompt = f\"\"\"You are a senior agronomist advising a farmer.\nFARM DATA:\n{json.dumps(state['farm_data'], indent=2)}\nYIELD PREDICTION: {state['yield_prediction']:.2f} tons/hectare",
+        "detail": "genai_capstone",
+        "documentation": {}
+    },
+    {
+        "label": "node_report",
+        "kind": 2,
+        "importPath": "genai_capstone",
+        "description": "genai_capstone",
+        "peekOfCode": "def node_report(state: FarmState) -> dict:\n    \"\"\"Convert LLM reasoning into a structured advisory report.\"\"\"\n    if state.get(\"error\") and not state.get(\"llm_reasoning\"):\n        return {\"advisory_report\": _normalize_report({}, state)}\n    log.info(\"[Node 4] Generating structured report...\")\n    try:\n        prompt = f\"\"\"Convert the agronomic reasoning below into a structured JSON report.\nREASONING:\n{state['llm_reasoning']}\nReturn ONLY valid JSON with exactly these keys:",
+        "detail": "genai_capstone",
+        "documentation": {}
+    },
+    {
+        "label": "node_display",
+        "kind": 2,
+        "importPath": "genai_capstone",
+        "description": "genai_capstone",
+        "peekOfCode": "def node_display(state: FarmState) -> dict:\n    \"\"\"Pretty-print the final advisory report to console.\"\"\"\n    r = state.get(\"advisory_report\", {})\n    cs = r.get(\"crop_summary\",  {})\n    fs = r.get(\"field_status\",  {})\n    print(\"\\n\" + \"═\" * 60)\n    print(\"  🌾  FARM ADVISORY REPORT\")\n    print(\"═\" * 60)\n    print(f\"\\n📋  CROP SUMMARY\")\n    print(f\"    Crop      : {cs.get('crop_name', 'N/A')}\")",
+        "detail": "genai_capstone",
+        "documentation": {}
+    },
+    {
+        "label": "build_graph",
+        "kind": 2,
+        "importPath": "genai_capstone",
+        "description": "genai_capstone",
+        "peekOfCode": "def build_graph() -> StateGraph:\n    g = StateGraph(FarmState)\n    g.add_node(\"predict\",  node_predict)\n    g.add_node(\"retrieve\", node_retrieve)\n    g.add_node(\"reason\",   node_reason)\n    g.add_node(\"report\",   node_report)\n    g.add_edge(START,      \"predict\")\n    g.add_edge(\"predict\",  \"retrieve\")\n    g.add_edge(\"retrieve\", \"reason\")\n    g.add_edge(\"reason\",   \"report\")",
+        "detail": "genai_capstone",
+        "documentation": {}
+    },
+    {
+        "label": "make_initial_state",
+        "kind": 2,
+        "importPath": "genai_capstone",
+        "description": "genai_capstone",
+        "peekOfCode": "def make_initial_state(farm_data: dict) -> FarmState:\n    return {\n        \"farm_data\":        farm_data,\n        \"yield_prediction\": 0.0,\n        \"yield_category\":   \"\",\n        \"retrieved_docs\":   [],\n        \"llm_reasoning\":    \"\",\n        \"advisory_report\":  {},\n        \"error\":            \"\",\n    }",
+        "detail": "genai_capstone",
+        "documentation": {}
+    },
+    {
+        "label": "run_farm_advisory",
+        "kind": 2,
+        "importPath": "genai_capstone",
+        "description": "genai_capstone",
+        "peekOfCode": "def run_farm_advisory(farm_input: dict):\n    result = app.invoke(make_initial_state(farm_input))\n    return result[\"advisory_report\"]\n# ── Sample ──────────────────────────────────────────────────────────────────\n# ── RUN AGENT (change farm_input values as needed) ──────────────────────────\n# setup_knowledge_base()\n# setup_model()\n# def run_farm_advisory(farm_input: dict):\n#     result = app.invoke(make_initial_state(farm_input))\n#     return result[\"advisory_report\"]",
+        "detail": "genai_capstone",
+        "documentation": {}
+    },
+    {
+        "label": "log",
+        "kind": 5,
+        "importPath": "genai_capstone",
+        "description": "genai_capstone",
+        "peekOfCode": "log = logging.getLogger(__name__)\n# ─────────────────────────────────────────────────────────────────────────────\n# CONFIG\n# ─────────────────────────────────────────────────────────────────────────────\nMODEL_NAME   = \"llama-3.1-8b-instant\"\nDATASET_PATH = \"crop_yield.csv\"\nNUM_COLS     = [\"Rainfall_mm\", \"Temperature_Celsius\", \"Days_to_Harvest\"]\nCAT_COLS     = [\"Region\", \"Soil_Type\", \"Crop\", \"Weather_Condition\"]\nYIELD_LOW_THRESHOLD  = 3.0   # tons/hectare\nYIELD_HIGH_THRESHOLD = 6.0",
+        "detail": "genai_capstone",
+        "documentation": {}
+    },
+    {
+        "label": "DATASET_PATH",
+        "kind": 5,
+        "importPath": "genai_capstone",
+        "description": "genai_capstone",
+        "peekOfCode": "DATASET_PATH = \"crop_yield.csv\"\nNUM_COLS     = [\"Rainfall_mm\", \"Temperature_Celsius\", \"Days_to_Harvest\"]\nCAT_COLS     = [\"Region\", \"Soil_Type\", \"Crop\", \"Weather_Condition\"]\nYIELD_LOW_THRESHOLD  = 3.0   # tons/hectare\nYIELD_HIGH_THRESHOLD = 6.0\nAGRONOMY_DOCS = [\n    # Crop-specific\n    \"Rice requires consistent irrigation and flooded fields for high yield. It grows best in clay soil that retains water.\",\n    \"Wheat grows best in loam soil with moderate rainfall between 400–600mm. Avoid waterlogging at root level.\",\n    \"Cotton is highly sensitive to waterlogging. Sandy soil with drip irrigation is ideal for cotton cultivation.\",",
+        "detail": "genai_capstone",
+        "documentation": {}
+    },
+    {
+        "label": "YIELD_HIGH_THRESHOLD",
+        "kind": 5,
+        "importPath": "genai_capstone",
+        "description": "genai_capstone",
+        "peekOfCode": "YIELD_HIGH_THRESHOLD = 6.0\nAGRONOMY_DOCS = [\n    # Crop-specific\n    \"Rice requires consistent irrigation and flooded fields for high yield. It grows best in clay soil that retains water.\",\n    \"Wheat grows best in loam soil with moderate rainfall between 400–600mm. Avoid waterlogging at root level.\",\n    \"Cotton is highly sensitive to waterlogging. Sandy soil with drip irrigation is ideal for cotton cultivation.\",\n    \"Maize yields improve significantly with nitrogen-rich fertilizers and regular irrigation in warm climates.\",\n    \"Barley is drought-tolerant but sensitive to extreme heat during flowering. Reduce irrigation during grain fill.\",\n    \"Soybeans fix atmospheric nitrogen naturally. Phosphorus supplementation is recommended in silty soils.\",\n    # Soil-specific",
+        "detail": "genai_capstone",
+        "documentation": {}
+    },
+    {
+        "label": "AGRONOMY_DOCS",
+        "kind": 5,
+        "importPath": "genai_capstone",
+        "description": "genai_capstone",
+        "peekOfCode": "AGRONOMY_DOCS = [\n    # Crop-specific\n    \"Rice requires consistent irrigation and flooded fields for high yield. It grows best in clay soil that retains water.\",\n    \"Wheat grows best in loam soil with moderate rainfall between 400–600mm. Avoid waterlogging at root level.\",\n    \"Cotton is highly sensitive to waterlogging. Sandy soil with drip irrigation is ideal for cotton cultivation.\",\n    \"Maize yields improve significantly with nitrogen-rich fertilizers and regular irrigation in warm climates.\",\n    \"Barley is drought-tolerant but sensitive to extreme heat during flowering. Reduce irrigation during grain fill.\",\n    \"Soybeans fix atmospheric nitrogen naturally. Phosphorus supplementation is recommended in silty soils.\",\n    # Soil-specific\n    \"Sandy soil drains quickly and loses nutrients fast. Frequent low-volume irrigation and organic matter addition recommended.\",",
+        "detail": "genai_capstone",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "genai_capstone",
+        "description": "genai_capstone",
+        "peekOfCode": "app = build_graph()\n# Initialize once if running directly\nif __name__ == \"__main__\":\n    setup_knowledge_base()\n    setup_model()\n# ─────────────────────────────────────────────────────────────────────────────\n# HELPER: INITIAL STATE\n# ─────────────────────────────────────────────────────────────────────────────\ndef make_initial_state(farm_data: dict) -> FarmState:\n    return {",
+        "detail": "genai_capstone",
+        "documentation": {}
+    },
+    {
+        "label": "FarmInput",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class FarmInput(BaseModel):\n    Region: str\n    Soil_Type: str\n    Crop: str\n    Rainfall_mm: float\n    Temperature_Celsius: float\n    Fertilizer_Used: bool\n    Irrigation_Used: bool\n    Weather_Condition: str\n    Days_to_Harvest: int",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "home",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def home():\n    return {\"message\": \"Farm Advisory API Running 🚀\"}\n@app.post(\"/predict\")\ndef predict(data: FarmInput):\n    # Advisory report generation\n    return run_farm_advisory(data.dict())",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "predict",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def predict(data: FarmInput):\n    # Advisory report generation\n    return run_farm_advisory(data.dict())",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "app = FastAPI(lifespan=lifespan)\nclass FarmInput(BaseModel):\n    Region: str\n    Soil_Type: str\n    Crop: str\n    Rainfall_mm: float\n    Temperature_Celsius: float\n    Fertilizer_Used: bool\n    Irrigation_Used: bool\n    Weather_Condition: str",
+        "detail": "main",
+        "documentation": {}
+    }
+]
