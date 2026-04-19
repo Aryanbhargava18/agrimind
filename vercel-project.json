@@ -1,0 +1,12 @@
+{
+  "projectSettings": {
+    "buildCommand": "npm run build",
+    "buildCommandVerification": "echo 'Build complete'",
+    "devCommand": "npm run dev",
+    "framework": "vite",
+    "installCommand": "npm install",
+    "outputDirectory": "dist",
+    "rootDirectory": "/",
+    "frameworkPreset": "vite"
+  }
+}
