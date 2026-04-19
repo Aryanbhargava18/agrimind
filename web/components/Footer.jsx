@@ -1,6 +1,6 @@
-import { Code2, RadioTower } from 'lucide-react';
+import { Code2 } from 'lucide-react';
 
-export default function Footer({ health }) {
+export default function Footer() {
   return (
     <footer className="footer-shell">
       <div>
@@ -15,11 +15,6 @@ export default function Footer({ health }) {
           <Code2 size={17} />
           GitHub
         </a>
-        <span className="backend-pill">
-          <RadioTower size={15} />
-          <span className={health.ok ? 'dot-online' : 'dot-warn'} />
-          {health.ok ? 'Backend Online' : 'Backend Check'}
-        </span>
       </div>
     </footer>
   );

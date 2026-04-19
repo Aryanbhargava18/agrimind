@@ -1,15 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 import { AnimatePresence, motion } from 'framer-motion';
-import {
-  AlertTriangle,
-  CheckCircle2,
-  ChevronDown,
-  CloudSun,
-  FileSearch,
-  MapPin,
-  Sprout,
-} from 'lucide-react';
+import { CheckCircle2, ChevronDown, CloudSun, FileSearch, MapPin, Sprout } from 'lucide-react';
 import {
   Cell,
   Pie,
@@ -23,25 +15,29 @@ import { agentTrace, cropOptions, riskConfig } from '../lib/constants.js';
 import { parseYieldValue } from '../lib/api.js';
 
 export default function ResultsDashboard({ result, isLoading }) {
+  const hasContent = isLoading || Boolean(result);
+
   return (
     <section id="results" className="section-shell results-section">
-      <div className="mb-10 grid gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
-        <div className="reveal-up">
-          <div className="section-kicker">Results dashboard</div>
-          <h2 className="section-title">Model output, agent trace, and RAG evidence.</h2>
+      {hasContent && (
+        <div className="mb-10 grid gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
+          <div className="reveal-up">
+            <div className="section-kicker">Results dashboard</div>
+            <h2 className="section-title">Model output, agent trace, and RAG evidence.</h2>
+          </div>
+          <p className="section-copy reveal-up">
+            Results persist in localStorage after refresh. Cards show the same structured JSON
+            sections returned by the deployed advisory API.
+          </p>
         </div>
-        <p className="section-copy reveal-up">
-          Results persist in localStorage after refresh. Cards show the same structured JSON sections
-          returned by the deployed advisory API.
-        </p>
-      </div>
+      )}
 
       {isLoading && <SkeletonGrid />}
 
       {!isLoading && !result && (
         <div className="empty-results reveal-up">
-          Run the advisory wizard to generate a bento dashboard with prediction, risk, actions,
-          citations, and safety guidance.
+          Run the advisory wizard to generate a bento dashboard with prediction, risk, actions, and
+          citations.
         </div>
       )}
 
@@ -74,8 +70,17 @@ function ResultGrid({ result }) {
         <p>{result.cropSummary.yieldPrediction}</p>
         <div className="h-44">
           <ResponsiveContainer width="100%" height="100%">
-            <RadialBarChart innerRadius="68%" outerRadius="100%" data={[{ value: Math.max(1, Math.min(yieldValue * 12, 100)) }]}>
-              <RadialBar dataKey="value" cornerRadius={20} fill={risk.color} background={{ fill: 'rgba(245,240,232,.08)' }} />
+            <RadialBarChart
+              innerRadius="68%"
+              outerRadius="100%"
+              data={[{ value: Math.max(1, Math.min(yieldValue * 12, 100)) }]}
+            >
+              <RadialBar
+                dataKey="value"
+                cornerRadius={20}
+                fill={risk.color}
+                background={{ fill: 'rgba(245,240,232,.08)' }}
+              />
             </RadialBarChart>
           </ResponsiveContainer>
         </div>
@@ -166,20 +171,13 @@ function ResultGrid({ result }) {
           ))}
         </div>
       </div>
-
-      <div className="bento-card safety-card stagger-card">
-        <AlertTriangle size={24} />
-        <div>
-          <span className="card-eyebrow">Safety note</span>
-          <p>{result.safetyDisclaimer}</p>
-        </div>
-      </div>
     </motion.div>
   );
 }
 
 function ActionAccordion({ action, index }) {
   const [open, setOpen] = useState(index === 0);
+
   return (
     <article className={open ? 'action-accordion open' : 'action-accordion'}>
       <button type="button" onClick={() => setOpen((current) => !current)} aria-expanded={open}>
@@ -215,6 +213,7 @@ function AnimatedCounter({ value }) {
         if (ref.current) ref.current.textContent = proxy.value.toFixed(2);
       },
     });
+
     return () => tween.kill();
   }, [value]);
 

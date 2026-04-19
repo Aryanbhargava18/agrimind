@@ -9,7 +9,7 @@ const links = [
   { label: 'About', href: '#about' },
 ];
 
-export default function Navbar({ health }) {
+export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [hovered, setHovered] = useState(false);
 
@@ -57,10 +57,6 @@ export default function Navbar({ health }) {
         </div>
 
         <div className="hidden items-center gap-3 md:flex">
-          <span className="backend-pill">
-            <span className={health.ok ? 'dot-online' : 'dot-warn'} />
-            {health.ok ? 'Online' : 'Checking'}
-          </span>
           <a href="#advisory" className="magnetic-button nav-cta" data-magnetic>
             Get Advisory
           </a>
@@ -137,4 +133,3 @@ export default function Navbar({ health }) {
     </header>
   );
 }
-
