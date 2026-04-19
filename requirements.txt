@@ -1,4 +1,6 @@
+# Extra index for CPU-only torch to save space on Render
 --extra-index-url https://download.pytorch.org/whl/cpu
+
 
 fastapi
 uvicorn
@@ -6,8 +8,10 @@ langgraph
 groq
 chromadb
 sentence-transformers
-torch==2.11.0+cpu
+torch
 pandas
 numpy
 scikit-learn
 plotly
+joblib
+python-dotenv

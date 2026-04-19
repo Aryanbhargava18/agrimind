@@ -15,172 +15,174 @@ from sklearn.tree import DecisionTreeRegressor
 
 # Data → Cleaning → Selection → Splitting → Scaling → Training → Evaluation → Prediction → Deployment → Reporting
 
-# loading the Dataset
 
-data = pd.read_csv('crop_yield.csv')
-df = pd.DataFrame(data)
+# --- PRE-PROCESSING & TRAINING (Wrapped for Backend) ---
+if __name__ == "__main__":
+    # loading the Dataset
+    data = pd.read_csv('crop_yield.csv')
+    df = pd.DataFrame(data)
 
-# df.info()
-df = df.dropna()
-# check for the missing values
-df.isna().sum()
+    # df.info()
+    df = df.dropna()
+    # check for the missing values
+    df.isna().sum()
 
-df.head()
+    df.head()
 
-# figuring out the features and labels
+    # figuring out the features and labels
+    X = df.drop('Yield_tons_per_hectare',axis=1)    # features
+    y = df['Yield_tons_per_hectare']                # label (target)
 
-X = df.drop('Yield_tons_per_hectare',axis=1)    # features
-y = df['Yield_tons_per_hectare']                # label (target)
+    # one hot encoding of categorical data and outlier handeling of numerical data using IQR method
+    categorical_cols = ['Region', 'Soil_Type', 'Crop', 'Weather_Condition']
 
-# one hot encoding of categorical data and outlier handeling of numerical data using IQR method
-categorical_cols = ['Region', 'Soil_Type', 'Crop', 'Weather_Condition']
+    numerical_cols = ['Rainfall_mm', 'Temperature_Celsius', 'Days_to_Harvest']
 
-numerical_cols = ['Rainfall_mm', 'Temperature_Celsius', 'Days_to_Harvest']
+    Q1 = df[numerical_cols].quantile(0.25)
+    Q3 = df[numerical_cols].quantile(0.75)
+    IQR = Q3 - Q1
 
-Q1 = df[numerical_cols].quantile(0.25)
-Q3 = df[numerical_cols].quantile(0.75)
-IQR = Q3 - Q1
+    lower = Q1 - 1.5 * IQR
+    upper = Q3 + 1.5 * IQR
 
-lower = Q1 - 1.5 * IQR
-upper = Q3 + 1.5 * IQR
+    # Clip values to lower and upper bounds
+    df[numerical_cols] = df[numerical_cols].clip(lower=lower, upper=upper, axis=1)
 
-# Clip values to lower and upper bounds
-df[numerical_cols] = df[numerical_cols].clip(lower=lower, upper=upper, axis=1)
+    # drop first gives more efficiency
+    X = pd.get_dummies(X, columns=categorical_cols, drop_first=True)
+    X
 
-# drop first gives more efficiency
-X = pd.get_dummies(X, columns=categorical_cols, drop_first=True)
-X
+    X.info() # summary of the input
 
-X.info() # summary of the input
+    # standard scaling for making all features come to the same scale
+    scaler = StandardScaler()
+    X[numerical_cols] = scaler.fit_transform(X[numerical_cols])
 
-# standard scaling for making all features come to the same scale
-scaler = StandardScaler()
-X[numerical_cols] = scaler.fit_transform(X[numerical_cols])
+    X
 
-X
+    # train test split of 90/10
 
-# train test split of 90/10
+    from sklearn.model_selection import train_test_split
 
-from sklearn.model_selection import train_test_split
+    X_train, X_test, y_train, y_test = train_test_split(
+        X, y, test_size=0.1, random_state=42
+    )
+    # print(X_train.isnull().sum())
+    print("Train size:", X_train.shape)
+    print("Test size:", X_test.shape)
 
-X_train, X_test, y_train, y_test = train_test_split(
-    X, y, test_size=0.1, random_state=42
-)
-# print(X_train.isnull().sum())
-print("Train size:", X_train.shape)
-print("Test size:", X_test.shape)
+    # created and trained the model of Linear Regression
 
-# created and trained the model of Linear Regression
+    lr = LinearRegression()
+    lr.fit(X_train, y_train)
+    y_pred_lr = lr.predict(X_test)
 
-lr = LinearRegression()
-lr.fit(X_train, y_train)
-y_pred_lr = lr.predict(X_test)
+    # evaluation metrics for Linear Regression
 
-# evaluation metrics for Linear Regression
+    from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 
-from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
+    print("\n--- Linear Regression ---")
+    print(f"R²:   {r2_score(y_test, y_pred_lr):.4f}")
+    print(f"MAE:  {mean_absolute_error(y_test, y_pred_lr):.4f}")
+    print(f"RMSE: {np.sqrt(mean_squared_error(y_test, y_pred_lr)):.4f}")
 
-print("\n--- Linear Regression ---")
-print(f"R²:   {r2_score(y_test, y_pred_lr):.4f}")
-print(f"MAE:  {mean_absolute_error(y_test, y_pred_lr):.4f}")
-print(f"RMSE: {np.sqrt(mean_squared_error(y_test, y_pred_lr)):.4f}")
+    # created and trained the model of Decision Tree
 
-# created and trained the model of Decision Tree
+    dt_final = DecisionTreeRegressor(
+        max_depth=15,
+        min_samples_split=10,
+        min_samples_leaf=5,
+        random_state=42
+    )
+    dt_final.fit(X_train, y_train)
 
-dt_final = DecisionTreeRegressor(
-    max_depth=15,
-    min_samples_split=10,
-    min_samples_leaf=5,
-    random_state=42
-)
-dt_final.fit(X_train, y_train)
+    # evaluation metrics for Decision Tree (ensuring there was no overfitting)
 
-# evaluation metrics for Decision Tree (ensuring there was no overfitting)
+    from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
+    import numpy as np
 
-from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
-import numpy as np
+    # Predictions
+    y_pred_train = dt_final.predict(X_train)
+    y_pred_test = dt_final.predict(X_test)
 
-# Predictions
-y_pred_train = dt_final.predict(X_train)
-y_pred_test = dt_final.predict(X_test)
+    # Metrics
+    print("=== Decision Tree Final Model ===")
+    print(f"{'R²':<10} {r2_score(y_train, y_pred_train):>10.4f} {r2_score(y_test, y_pred_test):>10.4f}")
+    print(f"{'MAE':<10} {mean_absolute_error(y_train, y_pred_train):>10.4f} {mean_absolute_error(y_test, y_pred_test):>10.4f}")
+    print(f"{'RMSE':<10} {np.sqrt(mean_squared_error(y_train, y_pred_train)):>10.4f} {np.sqrt(mean_squared_error(y_test, y_pred_test)):>10.4f}")
 
-# Metrics
-print("=== Decision Tree Final Model ===")
-print(f"{'R²':<10} {r2_score(y_train, y_pred_train):>10.4f} {r2_score(y_test, y_pred_test):>10.4f}")
-print(f"{'MAE':<10} {mean_absolute_error(y_train, y_pred_train):>10.4f} {mean_absolute_error(y_test, y_pred_test):>10.4f}")
-print(f"{'RMSE':<10} {np.sqrt(mean_squared_error(y_train, y_pred_train)):>10.4f} {np.sqrt(mean_squared_error(y_test, y_pred_test)):>10.4f}")
+    # Overfitting check
+    diff = r2_score(y_train, y_pred_train) - r2_score(y_test, y_pred_test)
+    print(f"\nR² Difference: {diff:.4f}")
 
-# Overfitting check
-diff = r2_score(y_train, y_pred_train) - r2_score(y_test, y_pred_test)
-print(f"\nR² Difference: {diff:.4f}")
+    if diff < 0.05:
+        print("No overfitting — perfect!")
+    elif diff < 0.10:
+        print("Slight overfitting — acceptable")
+    else:
+        print("Overfitting — tune further")
 
-if diff < 0.05:
-    print("No overfitting — perfect!")
-elif diff < 0.10:
-    print("Slight overfitting — acceptable")
-else:
-    print("Overfitting — tune further")
+    # we choose Linear Regression over Decision Tree because R2 score for Linear regression is better than decsiion tree and MAE and RMSE is also lower
 
-# we choose Linear Regression over Decision Tree because R2 score for Linear regression is better than decsiion tree and MAE and RMSE is also lower
+    # then we plotted our data and got the best fit line for it
 
-# then we plotted our data and got the best fit line for it
+    import plotly.graph_objects as go
+    import numpy as np
 
-import plotly.graph_objects as go
-import numpy as np
+    # Best fit line using numpy
+    m, b = np.polyfit(y_test, y_pred_lr, 1)
+    x_line = np.linspace(y_test.min(), y_test.max(), 100)
+    y_line = m * x_line + b
 
-# Best fit line using numpy
-m, b = np.polyfit(y_test, y_pred_lr, 1)
-x_line = np.linspace(y_test.min(), y_test.max(), 100)
-y_line = m * x_line + b
+    fig = go.Figure()
 
-fig = go.Figure()
+    # Scatter points
+    fig.add_trace(go.Scatter(
+        x=y_test,
+        y=y_pred_lr,
+        mode='markers',
+        marker=dict(color='steelblue', size=4, opacity=0.4),
+        name='Predicted vs Actual'
+    ))
 
-# Scatter points
-fig.add_trace(go.Scatter(
-    x=y_test,
-    y=y_pred_lr,
-    mode='markers',
-    marker=dict(color='steelblue', size=4, opacity=0.4),
-    name='Predicted vs Actual'
-))
+    # Best fit line
+    fig.add_trace(go.Scatter(
+        x=x_line,
+        y=y_line,
+        mode='lines',
+        line=dict(color='red', width=2),
+        name='Best Fit Line'
+    ))
 
-# Best fit line
-fig.add_trace(go.Scatter(
-    x=x_line,
-    y=y_line,
-    mode='lines',
-    line=dict(color='red', width=2),
-    name='Best Fit Line'
-))
+    fig.update_layout(
+        title=f'Linear Regression — Best Fit Line<br>R²: {r2_score(y_test, y_pred_lr):.4f}',
+        xaxis_title='Actual Yield',
+        yaxis_title='Predicted Yield',
+        height=500
+    )
 
-fig.update_layout(
-    title=f'Linear Regression — Best Fit Line<br>R²: {r2_score(y_test, y_pred_lr):.4f}',
-    xaxis_title='Actual Yield',
-    yaxis_title='Predicted Yield',
-    height=500
-)
+    # fig.show() # Commented for backend deployment
 
-fig.show()
-
-import plotly.express as px
-import pandas as pd
+    import plotly.express as px
+    import pandas as pd
 
 
-train_df = X_train.copy()
-train_df['Yield_tons_per_hectare'] = y_train.values
+    train_df = X_train.copy()
+    train_df['Yield_tons_per_hectare'] = y_train.values
 
-corr_matrix = train_df.corr(numeric_only=True)
+    corr_matrix = train_df.corr(numeric_only=True)
 
-fig = px.imshow(
-    corr_matrix,
-    text_auto=True,
-    color_continuous_scale='RdYlGn',
-    title='Correlation Heatmap — Crop Yield Dataset',
-    aspect='auto'
-)
+    fig = px.imshow(
+        corr_matrix,
+        text_auto=True,
+        color_continuous_scale='RdYlGn',
+        title='Correlation Heatmap — Crop Yield Dataset',
+        aspect='auto'
+    )
 
-fig.update_layout(height=600, width=700)
-fig.show()
+    fig.update_layout(height=600, width=700)
+    # fig.show() # Commented for backend deployment
+
 
 
 
@@ -323,11 +325,24 @@ def setup_knowledge_base() -> None:
 # ─────────────────────────────────────────────────────────────────────────────
 # SETUP: ML MODEL
 # ─────────────────────────────────────────────────────────────────────────────
+import joblib
+
 def setup_model() -> None:
-    """Train LinearRegression on crop_yield.csv. Preprocessing mirrors Milestone 1."""
+    """Load pre-trained model or train on crop_yield.csv if missing."""
     global _model, _scaler, _feature_cols
 
-    log.info(f"Loading dataset from '{DATASET_PATH}'...")
+    MODEL_FILE = "model.joblib"
+    
+    if os.path.exists(MODEL_FILE):
+        log.info(f"Loading persistent model from '{MODEL_FILE}'...")
+        data = joblib.load(MODEL_FILE)
+        _model = data['model']
+        _scaler = data['scaler']
+        _feature_cols = data['feature_cols']
+        log.info("Model loaded successfully.")
+        return
+
+    log.info(f"Persistent model not found. Training on '{DATASET_PATH}' (this may take time)...")
     df = pd.read_csv(DATASET_PATH)
 
     # Drop nulls (mirrors M1)
@@ -360,7 +375,11 @@ def setup_model() -> None:
     # Train
     _model = LinearRegression()
     _model.fit(X, y)
-    log.info(f"Model trained on {len(df):,} rows | Features: {len(_feature_cols)}")
+    
+    # Save for next time
+    joblib.dump({'model': _model, 'scaler': _scaler, 'feature_cols': _feature_cols}, MODEL_FILE)
+    log.info(f"Model trained on {len(df):,} rows and saved to '{MODEL_FILE}'")
+
 
 # ─────────────────────────────────────────────────────────────────────────────
 # HELPER: LLM CALL
@@ -616,9 +635,12 @@ def build_graph() -> StateGraph:
 # Build app
 app = build_graph()
 
-# Initialize once (VERY IMPORTANT)
-setup_knowledge_base()
-setup_model()
+
+# Initialize once if running directly
+if __name__ == "__main__":
+    setup_knowledge_base()
+    setup_model()
+
 
 # ─────────────────────────────────────────────────────────────────────────────
 # HELPER: INITIAL STATE

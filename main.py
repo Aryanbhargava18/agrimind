@@ -1,8 +1,21 @@
+import os
+from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from pydantic import BaseModel
-from genai_capstone import run_farm_advisory
+from dotenv import load_dotenv
+from genai_capstone import run_farm_advisory, setup_model, setup_knowledge_base
 
-app = FastAPI()
+# Load environment variables (for local testing)
+load_dotenv()
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Initialize once on startup
+    setup_knowledge_base()
+    setup_model()
+    yield
+
+app = FastAPI(lifespan=lifespan)
 
 class FarmInput(BaseModel):
     Region: str
@@ -21,4 +34,5 @@ def home():
 
 @app.post("/predict")
 def predict(data: FarmInput):
+    # Advisory report generation
     return run_farm_advisory(data.dict())
