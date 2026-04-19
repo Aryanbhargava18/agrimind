@@ -74,7 +74,7 @@ function ResultGrid({ result }) {
         <p>{result.cropSummary.yieldPrediction}</p>
         <div className="h-44">
           <ResponsiveContainer width="100%" height="100%">
-            <RadialBarChart innerRadius="68%" outerRadius="100%" data={[{ value: Math.min(yieldValue * 12, 100) }]}>
+            <RadialBarChart innerRadius="68%" outerRadius="100%" data={[{ value: Math.max(1, Math.min(yieldValue * 12, 100)) }]}>
               <RadialBar dataKey="value" cornerRadius={20} fill={risk.color} background={{ fill: 'rgba(245,240,232,.08)' }} />
             </RadialBarChart>
           </ResponsiveContainer>
@@ -90,7 +90,7 @@ function ResultGrid({ result }) {
               <Pie
                 data={[
                   { name: 'risk', value: risk.score },
-                  { name: 'remaining', value: 100 - risk.score },
+                  { name: 'remaining', value: Math.max(1, 100 - risk.score) },
                 ]}
                 innerRadius={48}
                 outerRadius={68}

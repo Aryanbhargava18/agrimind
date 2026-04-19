@@ -1,5 +1,0 @@
-[project]
-name = "agrimind-capstone"
-version = "0.1.0"
-description = "Reference Agent/RAG Python package for the AgriMind React capstone frontend."
-requires-python = ">=3.10"
