@@ -5,6 +5,7 @@
 [![Hosting](https://shields.io)](https://render.com)
 
 
+
 An AI-driven agricultural analytics system that predicts crop yield using classical Machine Learning and provides autonomous farming advice via an Agentic AI workflow.
 
 ---
