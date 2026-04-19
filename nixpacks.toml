@@ -1,0 +1,5 @@
+[variables]
+    PYTHON_VERSION = "3.10.13"
+
+[phases.setup]
+    nixPkgs = ["python310", "gcc"]

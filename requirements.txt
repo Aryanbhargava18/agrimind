@@ -7,8 +7,9 @@ uvicorn
 langgraph
 groq
 chromadb
-sentence-transformers
-torch
+sentence-transformers>=3.0.0
+torch>=2.5.0
+
 pandas
 numpy
 scikit-learn
