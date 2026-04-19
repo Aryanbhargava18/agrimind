@@ -4,10 +4,11 @@
   "description": "Awwwards-inspired React frontend for the AgriMind Agentic Farm Advisory System.",
   "private": true,
   "type": "module",
-  "scripts": {
+"scripts": {
     "dev": "vite --host 0.0.0.0",
     "build": "vite build",
-    "preview": "vite preview --host 0.0.0.0"
+    "preview": "vite preview",
+    "vercel-build": "npm run build"
   },
   "repository": {
     "type": "git",
